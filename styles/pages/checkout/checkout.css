@@ -1,0 +1,145 @@
+.main {
+  max-width: 1100px;
+  padding-left: 30px;
+  padding-right: 30px;
+
+  margin-top: 140px;
+  margin-bottom: 100px;
+
+  /* margin-left: auto;
+     margin-right auto;
+     Is a trick for centering an element horizontally
+     without needing a container. */
+  margin-left: auto;
+  margin-right: auto;
+}
+.order-summary{
+  margin-bottom: 30px;
+}
+
+.page-title {
+  font-weight: 700;
+  font-size: 22px;
+  margin-bottom: 18px;
+}
+
+.checkout-grid {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+@media (max-width: 1000px) {
+  .main {
+    max-width: 500px;
+  }
+
+  .checkout-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.star{
+  color: red;
+  font-size: 17px;
+}
+
+.cart-item-container {
+  margin-bottom: 19px;
+  
+}
+.form-group{
+  display: inline-block;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.form h1{
+  padding-left: 10px;
+}
+label{
+  font-size: 20px;
+  margin-top: 10px;
+  font-weight: bold;
+   display: block;
+}
+input{
+ width: 80%;
+ height: 30px;
+border: 3px solid black;
+font-size: 20px;
+}
+
+
+
+
+
+.cart-item-details-grid {
+  display: grid;
+  /* 100px 1fr 1fr; means the 2nd and 3rd column will
+     take up half the remaining space in the grid
+     (they will divide up the remaining space evenly). */
+  grid-template-columns: 100px 1fr 1fr;
+  column-gap: 25px;
+}
+
+@media (max-width: 1000px) {
+  .cart-item-details-grid {
+    grid-template-columns: 100px 1fr;
+    row-gap: 30px;
+  }
+}
+.chekout-id{
+  display: block;
+  color: rgb(219, 37, 37);
+}
+.product-image {
+  max-width: 100%;
+  max-height: 120px;
+
+  /* margin-left: auto;
+     margin-right auto;
+     Is a trick for centering an element horizontally
+     without needing a container. */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.product-name {
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.product-quantity .link-primary {
+  margin-left: 3px;
+}
+
+.payment-summary-money {
+  text-align: right;
+}
+
+.subtotal-row .payment-summary-money {
+  border-top: 1px solid rgb(222, 222, 222);
+}
+
+.subtotal-row div {
+  padding-top: 9px;
+}
+
+.total-row {
+  color: rgb(177, 39, 4);
+  font-weight: 700;
+  font-size: 18px;
+
+  border-top: 1px solid rgb(222, 222, 222);
+  padding-top: 18px;
+}
+
+.place-order-button {
+  width: 80%;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-radius: 8px;
+
+  margin-top: 11px;
+  margin-bottom: 15px;
+}

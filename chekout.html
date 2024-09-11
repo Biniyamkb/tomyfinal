@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Checkout</title>
+    <link rel="shortcut icon" href="image/tom logo.jpg" type="image/x-icon">
+
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- This code is needed for responsive design to work.
+      (Responsive design = make the website look good on
+      smaller screen sizes like a phone or a tablet). -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Load a font called Roboto from Google Fonts. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Here are the CSS files for this page. -->
+    <link rel="stylesheet" href="styles/shared/general.css">
+    <link rel="stylesheet" href="styles/pages/checkout/checkout-header.css">
+    <link rel="stylesheet" href="styles/pages/checkout/checkout.css">
+  </head>
+  <body>
+    <div class="checkout-header">
+      <div class="header-content">
+        <div class="checkout-header-left-section">
+          <a href="tomy.html">
+            <img class="tommy" src="image/tom logo.jpg" width="50">
+           
+          </a>
+        </div>
+
+        <div class="checkout-header-middle-section">
+           (<a class="return-to-home-link js-return-to-home-link"
+            href="tomy.html"></a>)
+        </div>
+
+        <div class="checkout-header-right-section">
+          <span class="shop-info">  </span>
+          
+          <img src="image/icons/checkout-lock-icon.png">
+        </div>
+      </div>
+    </div>
+     
+    <div class="main">
+      <div class="page-title">Review your Favorite</div>
+      
+      <div class="checkout-grid">
+        <div class="order-summary js-order-summary">
+       
+        </div>
+        
+        <div class="form">
+            <h1>What do you went </h1>
+            <form action="https://api.web3forms.com/submit" method="POST">
+            <div class="form-group">
+                <label for="text">Name <span class="star">*</span> </label>
+                <input type="hidden" name="access_key" value="63444b56-62cf-4c50-b1f4-a43d8bf97a73">
+                <input type="text" placeholder="Abebe " name="name" required>
+            </div>
+            <div class="form-group">
+           <label for="text">id of shoes <span class="star">*</span> </label>
+           <input type="text"  name="shoes Id" placeholder="Example  A84" required>
+        </div>
+        <div class="form-group">
+           <label for="tel">Phone Number <span class="star">*</span> </label>
+           <input type="tel" name="tel" placeholder="0913......." required>
+           <label >Message</label>
+           <textarea name="Any message" cols="30" rows="5" placeholder="is there any message  Write hear?"></textarea>
+        </div>
+           <button type="submit" class="place-order-button button-primary">Send </button>
+           
+        </form>
+    </div>
+       
+
+        </div>
+      </div>
+    </div>
+    <footer>  
+        
+        <div class="left-section">
+        <p>
+        Copyright &copy; 2024 Tommy Collection All right Reserved
+      </p>
+      <p>Designed and developed by <a href="https://biniyamkebere.netlify.app/"> <span class="biniyamportfoli">Biniyam kebere </span> </a>
+      </p>
+    </div>
+        <ul>
+          <p class="contact">Contact in</p>
+          <li><a href="tel:+251913016027" target="_blank"><i class="fa-solid fa-phone fa-2x" style="color: #fff;"></i></a></li>
+          <li><a href="https://t.me/Tommy0913016027" target="_blank"><i class="fa-brands fa-telegram fa-2x" style="color:  #fff;"></i></a></li>
+          <li><a href="https://www.facebook.com/profile.php?id=100008426975393" target="_blank"><i class="fa-brands fa-facebook-f fa-2x" style="color: #fff;"></i></a></li>
+          <li><a href="https://tiktok.com/@user4024840311606" target="_blank"><i class="fa-brands fa-tiktok fa-2x" style="color: #fff;"></i></a></li>
+         
+          <li><a href="mailto:tt3500152@gmail.com" target="_blank"><i class="fa-solid fa-envelope fa-2x" style="color: #fff;"></i></a></li>
+          <li><a href="https://maps.app.goo.gl/sMNTW37BWG4Jbp8U6" target="_blank"> <i class="fa-solid fa-location-dot fa-2x" style="color: #fff;"></i></a></li>
+        </ul>
+      </footer>
+    <script src="https://unpkg.com/dayjs@1.11.10/dayjs.min.js"></script>
+    <script type="module" src="Script/chekout.js"></script>
+  </body>
+</html>
